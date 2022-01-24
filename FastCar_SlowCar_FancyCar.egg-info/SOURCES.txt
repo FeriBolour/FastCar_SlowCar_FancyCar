@@ -1,0 +1,6 @@
+README.md
+setup.py
+FastCar_SlowCar_FancyCar.egg-info/PKG-INFO
+FastCar_SlowCar_FancyCar.egg-info/SOURCES.txt
+FastCar_SlowCar_FancyCar.egg-info/dependency_links.txt
+FastCar_SlowCar_FancyCar.egg-info/top_level.txt
