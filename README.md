@@ -96,6 +96,23 @@ On the ILR, you have one of each of the 3 different cars (_FastCar_, _SlowCar_, 
 
 ---
 
+# Necessary Files:
+
+1. **base_car.py**: Includes the parent class which has the average car features.
+2. **fast_car.py**: The class for the FastCar object and its features.
+3. **slow_car.py**: The class for the SlowCar object and its features.
+4. **fancy_car.py**: The class for the FancyCar object and its features.
+5. **main.py**: Main scripts that includes the commands for our **Problem Statement**.
+6. **test_base_car.py**: Test Script to test functionality of BaseCar class --> 47 tests
+7. **test_fast_car.py**: Test Script to test functionality of FastCar class --> 4 tests
+8. **test_slow_car.py**: Test Script to test functionality of SlowCar class --> 4 tests
+9. **test_fancy_car.py**: Test Script to test functionality of FancyCar class --> 19 tests
+
+### Other Files:
+
+*FastCar_SlowCar_FancyCar.egg-info* folder, *venv* folder, *setup.py*, and *__init__* were created for packaging purposes.
+
+
 # Instructions
 
 ### Necessary Requirements:
