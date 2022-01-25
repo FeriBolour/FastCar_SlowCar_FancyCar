@@ -158,6 +158,9 @@ beep beep
 beep beep
 ```
 
+---
+
+
 In order to run the test scripts simply run the command ```pytest``` in your terminal while in this directory, and you should see a total of 74 tests pass. The following is going to be printed on your terminal:
 
 ```
