@@ -99,9 +99,9 @@ On the ILR, you have one of each of the 3 different cars (_FastCar_, _SlowCar_, 
 # Instructions
 
 ### Necessary Requirements:
-  1- Python **3.0** or Higher
+  1. Python **3.0** or Higher
   
-  2- **PyTest** library for running test scripts
+  2. **PyTest** library for running test scripts
   
 
 This project has been packaged and tested on both Windows and Linux platoforms. 
