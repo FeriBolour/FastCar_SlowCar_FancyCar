@@ -12,7 +12,7 @@ Multiple cars can be driving at the same time, each on their own ILR (don't worr
 
 __Problem Statement__
 
-On the IRL, you have one of each of the 3 different cars (_FastCar_, _SlowCar_, and _FancyCar_).  In the `main` race between them here is what happens.
+On the ILR, you have one of each of the 3 different cars (_FastCar_, _SlowCar_, and _FancyCar_).  In the `main` race between them here is what happens.
 
 1. All three cars start their engines
 2. `FastCar` and `FancyCar` turn on their lights
@@ -95,51 +95,85 @@ On the IRL, you have one of each of the 3 different cars (_FastCar_, _SlowCar_, 
    - Has a horn that goes "beep beep"
 
 ---
-## Submission
 
-Python is preferred, but coding in another language will not hinder your acceptance. All further instructions are assuming python is used.
+# Instructions
 
-All of the base features of any car should live in `base_car.py`. Each of the unique cars should live in `fast_car.py`, `slow_car.py`, and `fancy_car.py` respectively. There should be a `main` function that contains the actions described in __Problem Statement__. This function should be able to run on its own and should have the expected output based on the parameters.
+## Necessary Requirements:
+  1- Python **3.0** or Higher
+  
+  2- **PyTest** library for running test scripts
+  
 
-All code _must_ be tested in `/tests` dir (testability is viewed equally as functionality)
+This project has been packaged and tested on both Windows and Linux platoforms. 
+Simply clonning this repository should allow you to run the **main.py** file and the test scripts.
 
-Allowed packages: `attr`, `enum`, `pytest`, `typing`, along with any internal packages
+To run **main.py**, simply ``cd`` in this project's directory and then run the following command in your command prompt or terminal:
 
-All of your code should be submitted in a .zip file. A README with all necessary installation and use instructions should exist, along with all necessary project files.
+Linux:
 
-Project should be able to be installed, ran, and tested by simply following the instructions in the given README.
-
----
-### Example usage (doesn't have to follow this exact formatting)
-
-```
-car_1 = FastCar()
-car_1.on()
-car_1.gas(1)
-car_1.drive(10)
-car_1.brake(3)
-car_1.off()
-car_1.stats()
->> engine: Off
-lights: Off
-speed: 0 m/s
-odometer: 100 m
-home: 100 m
-gear: Park
+``` 
+python3 main.py 
 ```
 
+Windows:
+
+``` 
+python main.py
 ```
-car_2 = FancyCar()
-car_2.lights()
-car_2.on()
-car_2.gear('reverse')
-car_2.gas(1)
-car_2.drive(10)
-car_2.stats()
->> engine: On
-lights: On
-speed: 5 m/s
-odometer: 50 m
-home: 50 m
-direction: Reverse
+
+After running this command the following is going to be printed on your terminal/command prompt (which is the solution to the problem statement):
+
 ```
+--------------------------------------------------------------
+                    FastCar's Dashboard                      
+--------------------------------------------------------------
+Engine = On
+Headlights = On
+Current Speed = 150 m/s
+Odometer = 15600 m
+Distance From Home = 15600 m
+Current Gear = Drive
+--------------------------------------------------------------
+--------------------------------------------------------------
+                    SlowCar's Dashboard                      
+--------------------------------------------------------------
+Engine = Off
+Headlights = Off
+Current Speed = 0 m/s
+Odometer = 1125.0 m
+Distance From Home = 1125.0 m
+Current Gear = Park
+--------------------------------------------------------------
+--------------------------------------------------------------
+                    FancyCar's Dashboard                      
+--------------------------------------------------------------
+Engine = On
+Headlights = Off
+Current Speed = 100 m/s
+Odometer = 4665 m
+Distance From Home = 1335 m
+Current Gear = Reverse
+--------------------------------------------------------------
+beep beep
+beep beep
+```
+
+In order to run the test scripts simply run the command ```pytest``` in your terminal while in this directory, and you should see a total of 74 tests pass. You should see the following:
+
+```
+tests/test_base_car.py ...............................................   [ 63%]
+tests/test_fancy_car.py ...................                              [ 89%]
+tests/test_fast_car.py ....                                              [ 94%]
+tests/test_slow_car.py ....                                              [100%]
+
+============================== 74 passed in 0.14s ==============================
+```
+
+In order to get a more detailed report of the tests run: ```pytest -v```
+
+You can also run the test script for each file individually by running: ```pytest tests\script.py```
+For example:
+```
+pytest -v tests/test_base_car.py
+```
+
