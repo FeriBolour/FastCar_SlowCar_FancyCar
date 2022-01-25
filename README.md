@@ -172,6 +172,7 @@ tests/test_slow_car.py ....                                              [100%]
 In order to get a more detailed report of the tests run: ```pytest -v```
 
 You can also run the test script for each file individually by running: ```pytest tests\script.py```
+
 For example:
 ```
 pytest -v tests/test_base_car.py
