@@ -4,3 +4,8 @@ FastCar_SlowCar_FancyCar.egg-info/PKG-INFO
 FastCar_SlowCar_FancyCar.egg-info/SOURCES.txt
 FastCar_SlowCar_FancyCar.egg-info/dependency_links.txt
 FastCar_SlowCar_FancyCar.egg-info/top_level.txt
+tests/__init__.py
+tests/test_base_car.py
+tests/test_fancy_car.py
+tests/test_fast_car.py
+tests/test_slow_car.py
